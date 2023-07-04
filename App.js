@@ -13,6 +13,7 @@ import Title from './components/Title/Title';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import UserStoryItem from './components/UserStoryItem/UserStoryItem';
+import Post from './models/post';
 
 const App = () => {
   const stories = [
@@ -64,6 +65,18 @@ const App = () => {
       id: 12,
       name: 'Radhika4',
     },
+  ];
+  const otherPosts = [
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 1),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 2),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 3),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 4),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 5),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 6),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 7),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 8),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 9),
+    new Post('Pushparaj', 'Samant', 'Melbourne', 100, 20, 20, 10),
   ];
   const posts = [
     {
@@ -179,7 +192,7 @@ const App = () => {
             </>
           );
         }}
-        data={renderedPosts}
+        data={otherPosts}
         showsVerticalScrollIndicator={false}
         renderItem={({item}) => (
           <View style={styles.postContainer}>
