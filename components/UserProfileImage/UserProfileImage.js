@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../UserStoryItem/style';
 import {Image, View} from 'react-native';
+import styles from '../UserProfileImage/styles';
 
 const UserProfileImage = () => {
   return (
@@ -9,3 +9,4 @@ const UserProfileImage = () => {
     </View>
   );
 };
+export default UserProfileImage;

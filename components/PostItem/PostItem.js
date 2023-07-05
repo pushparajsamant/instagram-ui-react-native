@@ -7,13 +7,14 @@ import {
   faHeart,
   faMessage,
 } from '@fortawesome/free-solid-svg-icons';
+import UserProfileImage from '../UserProfileImage/UserProfileImage';
 
 const PostItem = ({item}) => {
   return (
     <View style={styles.mainCard}>
       <View style={styles.header}>
         <View style={styles.imageAndNameContainer}>
-          <Image source={require('../../assets/images/default_profile.png')} />
+          <UserProfileImage />
           <View style={styles.nameContainer}>
             <Text style={{fontWeight: 'bold'}}>
               {item.firstName} {item.lastName}
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   mainCard: {
-    marginHorizontal: 10,
+    marginHorizontal: 0,
   },
   actionView: {
     flexDirection: 'row',

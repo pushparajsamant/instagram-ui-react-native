@@ -1,19 +1,12 @@
 import {StyleSheet} from 'react-native';
 
-const style = StyleSheet.create({
-  header: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 26,
-    paddingVertical: 30,
+const globalStyle = StyleSheet.create({
+  backgroundWhite: {
+    backgroundColor: '#FFF',
   },
-  headerIcon: {
-    backgroundColor: '#F9FAFB',
-    padding: 12,
-    borderRadius: 100,
+  flexStyle: {
+    flex: 1,
   },
 });
 
-export default style;
+export default globalStyle;
